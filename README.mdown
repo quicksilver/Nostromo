@@ -2,10 +2,12 @@ I like the look of BezelHUD, but I’ve never felt like the square interfaces wo
 
 Here some examples of what some things might look like:
 
-http://projects.skurfer.com/PrimerHUD/?x=safari
-http://projects.skurfer.com/PrimerHUD/?x=downloads
-http://projects.skurfer.com/PrimerHUD/?x=url
-http://projects.skurfer.com/PrimerHUD/?x=search
+http://projects.skurfer.com/PrimerHUD/?x=safari  
+http://projects.skurfer.com/PrimerHUD/?x=downloads  
+http://projects.skurfer.com/PrimerHUD/?x=url  
+http://projects.skurfer.com/PrimerHUD/?x=search  
 http://projects.skurfer.com/PrimerHUD/?x=host
+
+(The working title was PrimerHUD.)
 
 You can mouse over one of the panes to see what it might look like highlighted.
