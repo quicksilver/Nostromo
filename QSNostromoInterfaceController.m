@@ -28,7 +28,13 @@
     [window setHideEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSPurgeEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithFloat:0.2],@"duration",nil]];
     
     [(QSBezelBackgroundView *)[[self window] contentView] setRadius:4.0];
-    [(QSBezelBackgroundView *)[[self window] contentView] setGlassStyle:QSGlossFlat];
+    /* Gloss Types
+    QSGlossFlat = 0, 			// Flat Highlight.
+	QSGlossUpArc = 1, 			// Upward Arc.
+	QSGlossDownArc = 2, 		// Downward Arc.
+	QSGlossRisingArc = 3, 		// Flat Highlight.
+	QSGlossControl = 4, 		// Glass Control style. */
+    [(QSBezelBackgroundView *)[[self window] contentView] setGlassStyle:QSGlossControl];
     
     [[self window] setFrame:standardRect display:YES];
     
