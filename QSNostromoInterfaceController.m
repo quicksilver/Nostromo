@@ -19,13 +19,13 @@
     [window setShowOffset:NSMakePoint(0, 0)];
     
     // other effects
-    [window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithFloat:0.2], @"duration", nil] forKey:kQSWindowExecEffect];
+    //[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithFloat:0.2], @"duration", nil] forKey:kQSWindowExecEffect];
     [window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"hide", @"type", [NSNumber numberWithFloat:0.15], @"duration", nil] forKey:kQSWindowFadeEffect];
     [window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVContractEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithFloat:0.333], @"duration", nil, [NSNumber numberWithFloat:0.25] , @"brightnessB", @"QSStandardBrightBlending", @"brightnessFn", nil] forKey:kQSWindowCancelEffect];
     // Effect for showing the QSWindow
-    [window setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSBingeEffect",@"transformFn",@"show",@"type",[NSNumber numberWithFloat:0.2],@"duration",nil]];
+    [window setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSSlightGrowEffect",@"transformFn",@"show",@"type",[NSNumber numberWithFloat:0.15],@"duration",nil]];
     // Effect for hiding the QSWindow
-    [window setHideEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSPurgeEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithFloat:0.2],@"duration",nil]];
+    [window setHideEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSSlightShrinkEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithFloat:0.15],@"duration",nil]];
     
     [(QSBezelBackgroundView *)[[self window] contentView] setRadius:4.0];
     /* Gloss Types
@@ -43,7 +43,6 @@
     [commandView bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
     
     [[self window] setMovableByWindowBackground:NO];
-    [(QSWindow *)[self window] setFastShow:YES];
     
     NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
     for(QSSearchObjectView *theControl in theControls) {
@@ -60,7 +59,7 @@
         [theCell setFont:[NSFont fontWithName:@"Lucida Grande" size:24]];
         [theCell setShowDetails:YES];
         [theCell setTextColor:[NSColor whiteColor]];
-        [theCell setState:NSOnState];
+        [theCell setState:NSOnState];        
         
         [theCell bind:@"highlightColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1A" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
         [theCell bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
@@ -95,7 +94,6 @@
     if ([[self window] isVisible]) [[self window] pulse:self];
     [super showMainWindow:sender];
     [[[self window] contentView] setNeedsDisplay:YES];
-    [[self window] setFastShow:YES];
 }
 
 - (void)expandWindow:(id)sender {
