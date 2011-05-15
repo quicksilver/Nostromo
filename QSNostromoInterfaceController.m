@@ -6,6 +6,7 @@
 }
 
 - (void)windowDidLoad {
+    NSString *interfaceFont = @"Helvetica Neue";
     standardRect = centerRectInRect([[self window] frame], [[NSScreen mainScreen] frame]);
     standardIObjectRect = [iSelector frame];
     heightDifference = NSMinY([aSelector frame]) - NSMinY(standardIObjectRect);
@@ -43,6 +44,7 @@
     [[[self window] contentView] bind:@"color" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1B" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
     [[self window] bind:@"hasShadow" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSBezelHasShadow" options:nil];
     [commandView bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
+    [commandView setFont:[NSFont systemFontOfSize:12.0]];
     
     [[self window] setMovableByWindowBackground:NO];
     
@@ -60,6 +62,7 @@
         
         [theCell setShowDetails:YES];
         [theCell setTextColor:[NSColor whiteColor]];
+        [theCell setFont:[NSFont fontWithName:interfaceFont size:0.0]];
         [theCell setState:NSOnState];
         
         [theCell bind:@"highlightColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1A" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];

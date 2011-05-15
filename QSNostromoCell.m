@@ -73,7 +73,7 @@
     // name string
     [nameAttributes release];
     nameAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:
-                        [NSFont fontWithName:[[self font] fontName] size:30.0], NSFontAttributeName,
+                        [NSFont fontWithName:[[self font] fontName] size:36.0], NSFontAttributeName,
                         mainColor, NSForegroundColorAttributeName,
                         style, NSParagraphStyleAttributeName,
                         nil];
