@@ -19,21 +19,21 @@
     [window setShowOffset:NSMakePoint(0, 0)];
     
     // other effects
-    //[window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithFloat:0.2], @"duration", nil] forKey:kQSWindowExecEffect];
+    [window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSExplodeEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithFloat:0.2], @"duration", nil] forKey:kQSWindowExecEffect];
     [window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"hide", @"type", [NSNumber numberWithFloat:0.15], @"duration", nil] forKey:kQSWindowFadeEffect];
     [window setWindowProperty:[NSDictionary dictionaryWithObjectsAndKeys:@"QSVContractEffect", @"transformFn", @"hide", @"type", [NSNumber numberWithFloat:0.333], @"duration", nil, [NSNumber numberWithFloat:0.25] , @"brightnessB", @"QSStandardBrightBlending", @"brightnessFn", nil] forKey:kQSWindowCancelEffect];
-    // Effect for showing the QSWindow
+    // Effect for showing the interface
     [window setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSSlightGrowEffect",@"transformFn",@"show",@"type",[NSNumber numberWithFloat:0.15],@"duration",nil]];
-    // Effect for hiding the QSWindow
+    // Effect for hiding the interface
     [window setHideEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSSlightShrinkEffect",@"transformFn",@"hide",@"type",[NSNumber numberWithFloat:0.15],@"duration",nil]];
     
     [(QSBezelBackgroundView *)[[self window] contentView] setRadius:4.0];
     /* Gloss Types
-    QSGlossFlat = 0, 			// Flat Highlight.
-	QSGlossUpArc = 1, 			// Upward Arc.
-	QSGlossDownArc = 2, 		// Downward Arc.
-	QSGlossRisingArc = 3, 		// Flat Highlight.
-	QSGlossControl = 4, 		// Glass Control style. */
+    QSGlossFlat = 0,            // Flat Highlight.
+    QSGlossUpArc = 1,           // Upward Arc.
+    QSGlossDownArc = 2,         // Downward Arc.
+    QSGlossRisingArc = 3,       // Flat Highlight.
+    QSGlossControl = 4,         // Glass Control style. */
     [(QSBezelBackgroundView *)[[self window] contentView] setGlassStyle:QSGlossControl];
     
     [[self window] setFrame:standardRect display:YES];
@@ -46,7 +46,8 @@
     
     NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
     for(QSSearchObjectView *theControl in theControls) {
-        QSObjectCell *theCell = [theControl cell];
+        [theControl setCell:[QSNostromoCell cellWithText]];
+        QSNostromoCell *theCell = [theControl cell];
         [theCell setAlignment:NSLeftTextAlignment];
         [theCell setImagePosition:NSImageLeft];
         [theControl setPreferredEdge:NSMaxXEdge];
@@ -55,8 +56,8 @@
         [(QSWindow *)[(theControl)->resultController window] setHideOffset:NSMakePoint(NSMaxX([iSelector frame]), 0)];
         [(QSWindow *)[(theControl)->resultController window] setShowOffset:NSMakePoint(NSMaxX([dSelector frame]), 0)];
         
-        //[theCell setFont:[NSFont systemFontOfSize:24]];
-        [theCell setFont:[NSFont fontWithName:@"Lucida Grande" size:24]];
+        [theCell setFont:[NSFont systemFontOfSize:24]];
+        //[theCell setFont:[NSFont fontWithName:@"Lucida Grande" size:24]];
         [theCell setShowDetails:YES];
         [theCell setTextColor:[NSColor whiteColor]];
         [theCell setState:NSOnState];        
@@ -78,15 +79,15 @@
             NSCell *theCell = [theControl cell];
             [theCell unbind:@"highlightColor"];
             [theCell unbind:@"textColor"];
-            [(QSObjectCell *)theCell setTextColor:nil];
-            [(QSObjectCell *)theCell setHighlightColor:nil];
+            [(QSNostromoCell *)theCell setTextColor:nil];
+            [(QSNostromoCell *)theCell setHighlightColor:nil];
         }
     }
     [super dealloc];
 }
 
 - (NSSize) maxIconSize {
-    return NSMakeSize(128, 128);
+    return NSMakeSize(512, 512);
 }
 
 - (void)showMainWindow:(id)sender {
@@ -128,9 +129,9 @@
 }
 
 - (void)searchObjectChanged:(NSNotification*)notif {
-	[super searchObjectChanged:notif];
-	NSString *commandName = [[self currentCommand] name];
-	if (!commandName) commandName = @"";
-	[commandView setStringValue:([dSelector objectValue] ? commandName : @"Quicksilver")];
+    [super searchObjectChanged:notif];
+    NSString *commandName = [[self currentCommand] name];
+    if (!commandName) commandName = @"";
+    [commandView setStringValue:([dSelector objectValue] ? commandName : @"Quicksilver")];
 }
 @end

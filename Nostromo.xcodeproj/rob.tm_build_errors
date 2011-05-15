@@ -1,2 +1,1 @@
-2011-04-29 23|38|44.030 xcodebuild[51509:2403] warning: ignoring operator ':rfc1034Identifier' on 'Nostromo' for macro 'PRODUCT_NAME'
-/Users/rob/Coding/Quicksilver/Nostromo/QSNostromoInterfaceController.m|89|warning: 'NSWindow' may not respond to 'setFastShow:'
+/Users/rob/Coding/Quicksilver/Nostromo/QSNostromoInterfaceController.xib|9|note: This view is clipping its content.

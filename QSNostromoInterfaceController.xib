@@ -38,7 +38,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{414, 282}, {810, 473}}</string>
 				<int key="NSWTFlags">-529006592</int>
-				<string key="NSWindowTitle">Primer HUD Interface</string>
+				<string key="NSWindowTitle">Nostromo Interface</string>
 				<string key="NSWindowClass">QSBorderlessWindow</string>
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
