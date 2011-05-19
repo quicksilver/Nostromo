@@ -50,8 +50,7 @@
     
     NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
     for(QSSearchObjectView *theControl in theControls) {
-        [theControl setCell:[QSNostromoCell cellWithText]];
-        QSNostromoCell *theCell = [theControl cell];
+        QSObjectCell *theCell = [theControl cell];
         [theCell setAlignment:NSLeftTextAlignment];
         [theCell setImagePosition:NSImageLeft];
         [theControl setPreferredEdge:NSMaxXEdge];
@@ -82,8 +81,8 @@
             NSCell *theCell = [theControl cell];
             [theCell unbind:@"highlightColor"];
             [theCell unbind:@"textColor"];
-            [(QSNostromoCell *)theCell setTextColor:nil];
-            [(QSNostromoCell *)theCell setHighlightColor:nil];
+            [(QSObjectCell *)theCell setTextColor:nil];
+            [(QSObjectCell *)theCell setHighlightColor:nil];
         }
     }
     [super dealloc];

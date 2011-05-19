@@ -14,7 +14,6 @@
 		07ED11F3136AD567002B55FF /* QSNostromoInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */; };
 		07ED11F5136AD582002B55FF /* QSNostromoInterfaceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07ED11F4136AD582002B55FF /* QSNostromoInterfaceController.xib */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
-		D41FEA5B137F038D006F1C98 /* QSNostromoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D41FEA5A137F038D006F1C98 /* QSNostromoCell.m */; };
 		D4F630D21374E7560003D22F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +41,6 @@
 		8D5B49B6048680CD000E48DA /* Nostromo.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nostromo.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		D41FEA59137F038D006F1C98 /* QSNostromoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoCell.h; sourceTree = "<group>"; };
-		D41FEA5A137F038D006F1C98 /* QSNostromoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +111,6 @@
 			children = (
 				07ED11F1136AD567002B55FF /* QSNostromoInterfaceController.h */,
 				07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */,
-				D41FEA59137F038D006F1C98 /* QSNostromoCell.h */,
-				D41FEA5A137F038D006F1C98 /* QSNostromoCell.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -222,7 +217,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07ED11F3136AD567002B55FF /* QSNostromoInterfaceController.m in Sources */,
-				D41FEA5B137F038D006F1C98 /* QSNostromoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
