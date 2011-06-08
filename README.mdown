@@ -11,3 +11,5 @@ http://projects.skurfer.com/PrimerHUD/?x=host
 (The working title was PrimerHUD.)
 
 You can mouse over one of the panes to see what it might look like highlighted.
+
+This interface requires Quicksilver ß62 or higher.
