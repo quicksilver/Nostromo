@@ -56,6 +56,7 @@
         [theControl setPreferredEdge:NSMaxXEdge];
         [theControl setResultsPadding:NSMinX([dSelector frame])];
         [theControl setPreferredEdge:NSMinY([dSelector frame])];
+        [theControl setTextCellFont:[NSFont fontWithName:@"Helvetica Neue" size:20.0]];
         [(QSWindow *)[(theControl)->resultController window] setHideOffset:NSMakePoint(NSMaxX([iSelector frame]), 0)];
         [(QSWindow *)[(theControl)->resultController window] setShowOffset:NSMakePoint(NSMaxX([dSelector frame]), 0)];
         
