@@ -62,6 +62,8 @@
         [theCell setShowDetails:YES];
         [theCell setTextColor:[NSColor whiteColor]];
         [theCell setFont:[NSFont fontWithName:interfaceFont size:0.0]];
+        [theCell setNameFont:[NSFont fontWithName:interfaceFont size:36.0]];
+        [theCell setDetailsFont:[NSFont fontWithName:interfaceFont size:20.0]];
         [theCell setState:NSOnState];
         
         [theCell bind:@"highlightColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1A" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
