@@ -140,4 +140,8 @@
     if (!commandName) commandName = @"";
     [commandView setStringValue:([dSelector objectValue] ? commandName : @"Quicksilver")];
 }
+
+- (IBAction)customize:(id)sender{
+    [[NSClassFromString(@"QSPreferencesController") sharedInstance] showPaneWithIdentifier:@"QSNostromoPrefPane"];
+}
 @end

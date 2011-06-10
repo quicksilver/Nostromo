@@ -42,6 +42,26 @@
 			<key>QSNostromoInterfaceController</key>
 			<string>QSNostromoInterfaceController</string>
 		</dict>
+		<key>QSPreferencePanes</key>
+		<dict>
+			<key>QSNostromoPrefPane</key>
+			<dict>
+				<key>class</key>
+				<string>QSNostromoPreferences</string>
+				<key>description</key>
+				<string>Nostromo interface preferences</string>
+				<key>icon</key>
+				<string></string>
+				<key>name</key>
+				<string>Nostromo</string>
+				<key>nibBundle</key>
+				<string>com.qsapp.Quicksilver.NostromoInterface</string>
+				<key>nibName</key>
+				<string>QSNostromoPrefPane</string>
+				<key>type</key>
+				<string>hidden</string>
+			</dict>
+		</dict>
 	</dict>
 </dict>
 </plist>

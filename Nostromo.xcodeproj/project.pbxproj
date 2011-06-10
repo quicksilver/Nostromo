@@ -14,6 +14,9 @@
 		07ED11F3136AD567002B55FF /* QSNostromoInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */; };
 		07ED11F5136AD582002B55FF /* QSNostromoInterfaceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07ED11F4136AD582002B55FF /* QSNostromoInterfaceController.xib */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		D4BACB3E13A28AB0002C9E58 /* QSNostromoPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */; };
+		D4BACB5413A2901F002C9E58 /* QSNostromoPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BACB5313A2901F002C9E58 /* QSNostromoPreferences.m */; };
+		D4BACBF113A2A32C002C9E58 /* QSNostromoPrefButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */; };
 		D4F630D21374E7560003D22F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,11 @@
 		8D5B49B6048680CD000E48DA /* Nostromo.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nostromo.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QSNostromoPrefPane.xib; sourceTree = "<group>"; };
+		D4BACB5213A2901F002C9E58 /* QSNostromoPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoPreferences.h; sourceTree = "<group>"; };
+		D4BACB5313A2901F002C9E58 /* QSNostromoPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoPreferences.m; sourceTree = "<group>"; };
+		D4BACBEF13A2A32C002C9E58 /* QSNostromoPrefButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoPrefButtons.h; sourceTree = "<group>"; };
+		D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoPrefButtons.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,7 @@
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* Localizable.strings */,
 				07ED11F4136AD582002B55FF /* QSNostromoInterfaceController.xib */,
+				D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -111,6 +120,10 @@
 			children = (
 				07ED11F1136AD567002B55FF /* QSNostromoInterfaceController.h */,
 				07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */,
+				D4BACB5213A2901F002C9E58 /* QSNostromoPreferences.h */,
+				D4BACB5313A2901F002C9E58 /* QSNostromoPreferences.m */,
+				D4BACBEF13A2A32C002C9E58 /* QSNostromoPrefButtons.h */,
+				D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -206,6 +219,7 @@
 			files = (
 				D4F630D21374E7560003D22F /* Localizable.strings in Resources */,
 				07ED11F5136AD582002B55FF /* QSNostromoInterfaceController.xib in Resources */,
+				D4BACB3E13A28AB0002C9E58 /* QSNostromoPrefPane.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07ED11F3136AD567002B55FF /* QSNostromoInterfaceController.m in Sources */,
+				D4BACB5413A2901F002C9E58 /* QSNostromoPreferences.m in Sources */,
+				D4BACBF113A2A32C002C9E58 /* QSNostromoPrefButtons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
