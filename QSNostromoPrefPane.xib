@@ -83,7 +83,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="961968858">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">272760832</int>
-								<string key="NSContents">The Defaults button in the main section of the Appearance preferences can be used to undo this.</string>
+								<string key="NSContents">This will apply a black theme. Colors for this interface can be customized individually (or set back to defaults) in the main section of the Appearance preferences.</string>
 								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="497811265"/>
 								<object class="NSColor" key="NSBackgroundColor">
