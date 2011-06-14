@@ -56,13 +56,13 @@
         [theControl setPreferredEdge:NSMaxXEdge];
         [theControl setResultsPadding:NSMinX([dSelector frame])];
         [theControl setPreferredEdge:NSMinY([dSelector frame])];
-        [theControl setTextCellFont:[NSFont fontWithName:@"Helvetica Neue" size:20.0]];
+        [theControl setTextCellFont:[NSFont fontWithName:interfaceFont size:20.0]];
         [(QSWindow *)[(theControl)->resultController window] setHideOffset:NSMakePoint(NSMaxX([iSelector frame]), 0)];
         [(QSWindow *)[(theControl)->resultController window] setShowOffset:NSMakePoint(NSMaxX([dSelector frame]), 0)];
         
         [theCell setShowDetails:YES];
         [theCell setTextColor:[NSColor whiteColor]];
-        [theCell setFont:[NSFont fontWithName:interfaceFont size:0.0]];
+        [theCell setFont:[NSFont fontWithName:interfaceFont size:12.0]];
         [theCell setNameFont:[NSFont fontWithName:interfaceFont size:36.0]];
         [theCell setDetailsFont:[NSFont fontWithName:interfaceFont size:20.0]];
         [theCell setCellRadiusFactor:32.0];
