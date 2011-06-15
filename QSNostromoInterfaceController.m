@@ -12,12 +12,14 @@
     heightDifference = NSMinY([aSelector frame]) - NSMinY(standardIObjectRect);
     [super windowDidLoad];
     QSWindow *window = (QSWindow *)[self window];
-    //[window setLevel:kCGOverlayWindowLevel];
     [window setLevel:NSModalPanelWindowLevel];
     [window setBackgroundColor:[NSColor clearColor]];
     
     [window setHideOffset:NSMakePoint(0, 0)];
     [window setShowOffset:NSMakePoint(0, 0)];
+    
+    // Set the window to be visible on all spaces
+    [[self window] setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
     
     // Effect when showing the interface
     [window setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSSlightGrowEffect",@"transformFn",@"show",@"type",[NSNumber numberWithFloat:0.15],@"duration",nil]];
