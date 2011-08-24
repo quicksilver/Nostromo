@@ -18,5 +18,9 @@
 	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmAAAAg2ZmZj+G</data>
 	<key>QSAppearance3T</key>
 	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg4YsZD+DhixkP4OGLGQ/AYY=</data>
+	<key>QSBezelHasShadow</key>
+	<true/>
+	<key>QSBezelIsGlass</key>
+	<false/>
 </dict>
 </plist>
