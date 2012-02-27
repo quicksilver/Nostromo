@@ -17,6 +17,7 @@
 		D46582EA14FBE81800767406 /* Shiny.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E714FBE81800767406 /* Shiny.plist */; };
 		D46582EB14FBE81800767406 /* SolarizedLight.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E814FBE81800767406 /* SolarizedLight.plist */; };
 		D46582EC14FBE81800767406 /* TheHulk.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E914FBE81800767406 /* TheHulk.plist */; };
+		D46582EF14FBE85600767406 /* QSNostromoPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */; };
 		D4BACB3E13A28AB0002C9E58 /* QSNostromoPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */; };
 		D4BACBF113A2A32C002C9E58 /* QSNostromoPrefButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */; };
 		D4BACC4D13A2AA15002C9E58 /* QSNostromoColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4BACC4C13A2AA15002C9E58 /* QSNostromoColors.plist */; };
@@ -42,6 +43,8 @@
 		D46582E714FBE81800767406 /* Shiny.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Shiny.plist; sourceTree = "<group>"; };
 		D46582E814FBE81800767406 /* SolarizedLight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SolarizedLight.plist; sourceTree = "<group>"; };
 		D46582E914FBE81800767406 /* TheHulk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TheHulk.plist; sourceTree = "<group>"; };
+		D46582ED14FBE85600767406 /* QSNostromoPrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoPrefPane.h; sourceTree = "<group>"; };
+		D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoPrefPane.m; sourceTree = "<group>"; };
 		D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QSNostromoPrefPane.xib; sourceTree = "<group>"; };
 		D4BACBEF13A2A32C002C9E58 /* QSNostromoPrefButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoPrefButtons.h; sourceTree = "<group>"; };
 		D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoPrefButtons.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */,
 				D4BACBEF13A2A32C002C9E58 /* QSNostromoPrefButtons.h */,
 				D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */,
+				D46582ED14FBE85600767406 /* QSNostromoPrefPane.h */,
+				D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			files = (
 				07ED11F3136AD567002B55FF /* QSNostromoInterfaceController.m in Sources */,
 				D4BACBF113A2A32C002C9E58 /* QSNostromoPrefButtons.m in Sources */,
+				D46582EF14FBE85600767406 /* QSNostromoPrefPane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
