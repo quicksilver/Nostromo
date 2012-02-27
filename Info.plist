@@ -45,7 +45,7 @@
 			<key>QSNostromoPrefPane</key>
 			<dict>
 				<key>class</key>
-				<string>QSPreferencePane</string>
+				<string>QSNostromoPrefPane</string>
 				<key>description</key>
 				<string>Nostromo interface preferences</string>
 				<key>icon</key>

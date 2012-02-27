@@ -274,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4EBE37214A3B34B00D4FCCB /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = Nostromo;
 			};
 			name = Debug;
@@ -282,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4EBE37314A3B34B00D4FCCB /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = Nostromo;
 			};
 			name = Release;
