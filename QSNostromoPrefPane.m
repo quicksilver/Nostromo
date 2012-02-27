@@ -11,9 +11,9 @@
 
 - (void)awakeFromNib
 {
-	themes = [[NSDictionary alloc] initWithObjectsAndKeys:@"QSNostromoColors.plist", @"Nostromo Default", @"Shiny.plist", @"Shiny", @"SolarizedLight.plist", @"Solarized Light", @"TheHulk.plist", @"The Hulk", nil];
+	themes = [[NSArray alloc] initWithObjects:@"Nostromo Default", @"Shiny", @"Solarized Light", @"The Hulk", nil];
 	[themePicker removeAllItems];
-	[themePicker addItemsWithTitles:[themes allKeys]];
+	[themePicker addItemsWithTitles:themes];
 }
 
 - (void)dealloc
@@ -24,14 +24,18 @@
 
 - (IBAction)setNostromoTheme:(id)sender {
     // load colors from a file and set them in Quicksilver's preferences
-	NSString *themeKey = [[themePicker selectedItem] title];
-	NSString *themePath = [NSString stringWithFormat:@"Contents/Resources/%@", [themes objectForKey:themeKey]];
+	NSString *themeKey = [[[themePicker selectedItem] title] stringByReplacing:@" " with:@""];
+	NSString *themePath = [NSString stringWithFormat:@"Contents/Resources/%@.plist", themeKey];
 	//NSLog(@"setting theme using plist: %@", [themes objectForKey:themeKey]);
     NSDictionary *nostromoColors = [NSDictionary dictionaryWithContentsOfFile:[[[NSBundle bundleWithIdentifier:@"com.qsapp.Quicksilver.NostromoInterface"] bundlePath] stringByAppendingPathComponent:themePath]];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    for (NSString *colorKey in [nostromoColors allKeys]) {
-        [defaults setObject:[nostromoColors objectForKey:colorKey] forKey:colorKey];
-    }
-    [defaults synchronize];
+	if (nostromoColors) {
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+		for (NSString *colorKey in [nostromoColors allKeys]) {
+			[defaults setObject:[nostromoColors objectForKey:colorKey] forKey:colorKey];
+		}
+		[defaults synchronize];
+	} else {
+		NSBeep();
+	}
 }
 @end

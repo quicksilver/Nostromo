@@ -9,7 +9,7 @@
 
 @interface QSNostromoPrefPane : QSPreferencePane
 {
-	NSDictionary *themes;
+	NSArray *themes;
 	IBOutlet NSPopUpButton *themePicker;
 }
 - (IBAction)setNostromoTheme:(id)sender;
