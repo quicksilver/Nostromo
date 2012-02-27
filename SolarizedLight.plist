@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>QSAppearance1A</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg+vqaj+D5ONjP4PLyko/g83MTD+G</data>
+	<key>QSAppearance1B</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg/79fT+D9/Z2P4Pk42M/AYY=</data>
+	<key>QSAppearance1T</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg4+Ojj6Dt7a2PoPHxsY+AYY=</data>
+	<key>QSAppearance2A</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg+vqaj+D5ONjP4PLyko/AYY=</data>
+	<key>QSAppearance2B</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg/79fT+D9/Z2P4Pk42M/AYY=</data>
+	<key>QSAppearance3A</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg+vqaj+D5ONjP4PLyko/AYY=</data>
+	<key>QSAppearance3B</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg/79fT+D9/Z2P4Pk42M/AYY=</data>
+	<key>QSAppearance3T</key>
+	<data>BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARmZmZmg4+Ojj6Dt7a2PoPHxsY+AYY=</data>
+	<key>QSBezelHasShadow</key>
+	<true/>
+	<key>QSBezelIsGlass</key>
+	<true/>
+</dict>
+</plist>
