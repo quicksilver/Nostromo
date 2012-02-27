@@ -14,6 +14,7 @@
     NSRect standardRect;
     NSRect standardIObjectRect;
     CGFloat heightDifference;
+	IBOutlet NSTextField *menuButtonOverlay;
 }
 
 - (NSRect) rectForState:(BOOL)shouldExpand;
