@@ -83,6 +83,7 @@
         [[[self window] contentView] unbind:@"color"];
         [[self window] unbind:@"hasShadow"];
         [commandView unbind:@"textColor"];
+		[menuButtonOverlay unbind:@"textColor"];
         NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
         for(NSControl * theControl in theControls) {
             NSCell *theCell = [theControl cell];
