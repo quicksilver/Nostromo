@@ -110,6 +110,7 @@
 - (void)expandWindow:(id)sender {
     if (![self expanded]) {
         [[self window] setFrame:[self rectForState:YES] display:YES animate:YES];
+		[iSelector setFrame:standardIObjectRect];
     }
     [super expandWindow:sender];
 }
