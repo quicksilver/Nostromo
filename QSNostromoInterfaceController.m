@@ -49,7 +49,7 @@
     [menuButtonOverlay bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
     [commandView setFont:[NSFont fontWithName:interfaceFont size:12.0]];
     
-    [[self window] setMovableByWindowBackground:NO];
+    [[self window] setMovableByWindowBackground:YES];
     
     NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
     for(QSSearchObjectView *theControl in theControls) {
