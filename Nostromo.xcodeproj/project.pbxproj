@@ -19,7 +19,7 @@
 		D46582EC14FBE81800767406 /* TheHulk.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E914FBE81800767406 /* TheHulk.plist */; };
 		D46582EF14FBE85600767406 /* QSNostromoPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */; };
 		D4BACB3E13A28AB0002C9E58 /* QSNostromoPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */; };
-		D4BACC4D13A2AA15002C9E58 /* QSNostromoColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4BACC4C13A2AA15002C9E58 /* QSNostromoColors.plist */; };
+		D4BACC4D13A2AA15002C9E58 /* NostromoDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4BACC4C13A2AA15002C9E58 /* NostromoDefault.plist */; };
 		D4F630D21374E7560003D22F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		D46582ED14FBE85600767406 /* QSNostromoPrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoPrefPane.h; sourceTree = "<group>"; };
 		D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoPrefPane.m; sourceTree = "<group>"; };
 		D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QSNostromoPrefPane.xib; sourceTree = "<group>"; };
-		D4BACC4C13A2AA15002C9E58 /* QSNostromoColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QSNostromoColors.plist; sourceTree = "<group>"; };
+		D4BACC4C13A2AA15002C9E58 /* NostromoDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NostromoDefault.plist; sourceTree = "<group>"; };
 		D4EBE36E14A3B34B00D4FCCB /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		D4EBE36F14A3B34B00D4FCCB /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D4EBE37014A3B34B00D4FCCB /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				D46582E714FBE81800767406 /* Shiny.plist */,
 				D46582E814FBE81800767406 /* SolarizedLight.plist */,
 				D46582E914FBE81800767406 /* TheHulk.plist */,
-				D4BACC4C13A2AA15002C9E58 /* QSNostromoColors.plist */,
+				D4BACC4C13A2AA15002C9E58 /* NostromoDefault.plist */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
 				089C167DFE841241C02AAC07 /* Localizable.strings */,
 				07ED11F4136AD582002B55FF /* QSNostromoInterfaceController.xib */,
@@ -231,7 +231,7 @@
 				D4F630D21374E7560003D22F /* Localizable.strings in Resources */,
 				07ED11F5136AD582002B55FF /* QSNostromoInterfaceController.xib in Resources */,
 				D4BACB3E13A28AB0002C9E58 /* QSNostromoPrefPane.xib in Resources */,
-				D4BACC4D13A2AA15002C9E58 /* QSNostromoColors.plist in Resources */,
+				D4BACC4D13A2AA15002C9E58 /* NostromoDefault.plist in Resources */,
 				D46582EA14FBE81800767406 /* Shiny.plist in Resources */,
 				D46582EB14FBE81800767406 /* SolarizedLight.plist in Resources */,
 				D46582EC14FBE81800767406 /* TheHulk.plist in Resources */,
