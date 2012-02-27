@@ -19,7 +19,6 @@
 		D46582EC14FBE81800767406 /* TheHulk.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E914FBE81800767406 /* TheHulk.plist */; };
 		D46582EF14FBE85600767406 /* QSNostromoPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */; };
 		D4BACB3E13A28AB0002C9E58 /* QSNostromoPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */; };
-		D4BACBF113A2A32C002C9E58 /* QSNostromoPrefButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */; };
 		D4BACC4D13A2AA15002C9E58 /* QSNostromoColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4BACC4C13A2AA15002C9E58 /* QSNostromoColors.plist */; };
 		D4F630D21374E7560003D22F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -46,8 +45,6 @@
 		D46582ED14FBE85600767406 /* QSNostromoPrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoPrefPane.h; sourceTree = "<group>"; };
 		D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoPrefPane.m; sourceTree = "<group>"; };
 		D4BACB3D13A28AB0002C9E58 /* QSNostromoPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QSNostromoPrefPane.xib; sourceTree = "<group>"; };
-		D4BACBEF13A2A32C002C9E58 /* QSNostromoPrefButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoPrefButtons.h; sourceTree = "<group>"; };
-		D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoPrefButtons.m; sourceTree = "<group>"; };
 		D4BACC4C13A2AA15002C9E58 /* QSNostromoColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QSNostromoColors.plist; sourceTree = "<group>"; };
 		D4EBE36E14A3B34B00D4FCCB /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		D4EBE36F14A3B34B00D4FCCB /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -117,8 +114,6 @@
 			children = (
 				07ED11F1136AD567002B55FF /* QSNostromoInterfaceController.h */,
 				07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */,
-				D4BACBEF13A2A32C002C9E58 /* QSNostromoPrefButtons.h */,
-				D4BACBF013A2A32C002C9E58 /* QSNostromoPrefButtons.m */,
 				D46582ED14FBE85600767406 /* QSNostromoPrefPane.h */,
 				D46582EE14FBE85600767406 /* QSNostromoPrefPane.m */,
 			);
@@ -251,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07ED11F3136AD567002B55FF /* QSNostromoInterfaceController.m in Sources */,
-				D4BACBF113A2A32C002C9E58 /* QSNostromoPrefButtons.m in Sources */,
 				D46582EF14FBE85600767406 /* QSNostromoPrefPane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
