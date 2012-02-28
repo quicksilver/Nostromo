@@ -39,13 +39,21 @@
 
 &lt;p&gt;This provides a wide interface, suited to displaying longer names and/or details for items in your catalog.&lt;/p&gt;
 
-&lt;p&gt;The &amp;#8220;Customize&amp;#8221; panel in the Appearance preferences allows you to set colors from several themes. This interface uses and respects Quicksilver&amp;#8217;s bezel colors (also configurable in the Appearance prefs). As such, the &amp;#8220;themes&amp;#8221; are not persistent, but the individual colors are. This allows you to use one of the built-in options as a starting point, but tweak individual colors to your liking if needed.&lt;/p&gt;
+&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
+
+&lt;p&gt;The &amp;#8220;Customize&amp;#8221; panel in the Appearance preferences allows you to set colors from several &amp;#8220;themes&amp;#8221;. This interface uses and respects Quicksilver&amp;#8217;s bezel colors (also configurable in the Appearance prefs). As such, the themes are not persistent, but the individual colors are. This allows you to use one of the built-in options as a starting point, but tweak individual colors to your liking if needed.&lt;/p&gt;
 
 &lt;p&gt;To put it another way, the &amp;#8220;Customize&amp;#8221; panel is only used to &lt;strong&gt;set&lt;/strong&gt; colors. Do not expect to see the last theme you used selected the next time you open the panel.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/skurfer/Nostromo/issues&quot;&gt;Report bugs&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;h3 id=&quot;position&quot;&gt;Position&lt;/h3&gt;
 
-&lt;p&gt;&amp;#8220;Nostromo&amp;#8221; is the name of the ship in &lt;em&gt;Alien&lt;/em&gt; (1979).&lt;/p&gt;</string>
+&lt;p&gt;The interface can be moved if it&amp;#8217;s obscuring something, but the new position will not be remembered. It will be centered the next time you invoke it.&lt;/p&gt;
+
+&lt;h3 id=&quot;about&quot;&gt;About&lt;/h3&gt;
+
+&lt;p&gt;&amp;#8220;Nostromo&amp;#8221; is the name of the ship in &lt;em&gt;Alien&lt;/em&gt; (1979).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/skurfer/Nostromo/issues&quot;&gt;Report bugs&lt;/a&gt; on GitHub.&lt;/p&gt;</string>
 	</dict>
 	<key>QSRegistration</key>
 	<dict>
