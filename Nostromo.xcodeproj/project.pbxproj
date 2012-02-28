@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07ED1164136AD485002B55FF /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED1160136AD485002B55FF /* QSCore.framework */; };
-		07ED1165136AD485002B55FF /* QSEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED1161136AD485002B55FF /* QSEffects.framework */; };
-		07ED1166136AD485002B55FF /* QSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED1162136AD485002B55FF /* QSFoundation.framework */; };
-		07ED1167136AD485002B55FF /* QSInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07ED1163136AD485002B55FF /* QSInterface.framework */; };
 		07ED11F3136AD567002B55FF /* QSNostromoInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */; };
 		07ED11F5136AD582002B55FF /* QSNostromoInterfaceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07ED11F4136AD582002B55FF /* QSNostromoInterfaceController.xib */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
@@ -24,10 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07ED1160136AD485002B55FF /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = QSFrameworks; };
-		07ED1161136AD485002B55FF /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSEffects.framework; sourceTree = QSFrameworks; };
-		07ED1162136AD485002B55FF /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = QSFrameworks; };
-		07ED1163136AD485002B55FF /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = QSFrameworks; };
 		07ED11F1136AD567002B55FF /* QSNostromoInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSNostromoInterfaceController.h; sourceTree = "<group>"; };
 		07ED11F2136AD567002B55FF /* QSNostromoInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSNostromoInterfaceController.m; sourceTree = "<group>"; };
 		07ED11F4136AD582002B55FF /* QSNostromoInterfaceController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QSNostromoInterfaceController.xib; sourceTree = "<group>"; };
@@ -62,10 +54,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
-				07ED1164136AD485002B55FF /* QSCore.framework in Frameworks */,
-				07ED1165136AD485002B55FF /* QSEffects.framework in Frameworks */,
-				07ED1166136AD485002B55FF /* QSFoundation.framework in Frameworks */,
-				07ED1167136AD485002B55FF /* QSInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,10 +111,6 @@
 		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				07ED1160136AD485002B55FF /* QSCore.framework */,
-				07ED1161136AD485002B55FF /* QSEffects.framework */,
-				07ED1162136AD485002B55FF /* QSFoundation.framework */,
-				07ED1163136AD485002B55FF /* QSInterface.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
