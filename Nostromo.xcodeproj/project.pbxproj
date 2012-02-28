@@ -155,7 +155,7 @@
 				D4EBE37514A3B34B00D4FCCB /* Release.xcconfig */,
 			);
 			name = Configuration;
-			path = "/Users/rob/Coding/Quicksilver/Plug-ins/Nostromo/../../../../../../private/tmp/QS/Configuration";
+			path = "/private/tmp/QS/Configuration";
 			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
