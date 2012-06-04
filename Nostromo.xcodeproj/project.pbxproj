@@ -155,7 +155,7 @@
 				D4EBE37514A3B34B00D4FCCB /* Release.xcconfig */,
 			);
 			name = Configuration;
-			path = "/private/tmp/QS/Configuration";
+			path = /private/tmp/QS/Configuration;
 			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
@@ -185,7 +185,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Nostromo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -252,7 +252,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4EBE37214A3B34B00D4FCCB /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = Nostromo;
 			};
 			name = Debug;
@@ -261,7 +260,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4EBE37314A3B34B00D4FCCB /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				PRODUCT_NAME = Nostromo;
 			};
 			name = Release;
@@ -270,7 +268,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4EBE36F14A3B34B00D4FCCB /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Debug;
 		};
@@ -278,7 +275,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4EBE37514A3B34B00D4FCCB /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Release;
 		};
