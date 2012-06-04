@@ -24,8 +24,6 @@
 	<string></string>
 	<key>QSPlugIn</key>
 	<dict>
-		<key>qsversion</key>
-		<string>3900</string>
 		<key>author</key>
 		<string>Rob McBroom</string>
 		<key>categories</key>
@@ -82,6 +80,11 @@
 				<string>hidden</string>
 			</dict>
 		</dict>
+	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>version</key>
+		<string>3900</string>
 	</dict>
 </dict>
 </plist>
