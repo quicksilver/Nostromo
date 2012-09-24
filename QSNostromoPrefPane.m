@@ -24,7 +24,7 @@
 
 - (IBAction)setNostromoTheme:(id)sender {
     // load colors from a file and set them in Quicksilver's preferences
-	NSString *themeKey = [[[themePicker selectedItem] title] stringByReplacing:@" " with:@""];
+	NSString *themeKey = [[[themePicker selectedItem] title] stringByReplacingOccurrencesOfString:@" " withString:@""];
 	NSString *themePath = [NSString stringWithFormat:@"Contents/Resources/%@.plist", themeKey];
 	//NSLog(@"setting theme using plist: %@", [themes objectForKey:themeKey]);
     NSDictionary *nostromoColors = [NSDictionary dictionaryWithContentsOfFile:[[[NSBundle bundleWithIdentifier:@"com.qsapp.Quicksilver.NostromoInterface"] bundlePath] stringByAppendingPathComponent:themePath]];
