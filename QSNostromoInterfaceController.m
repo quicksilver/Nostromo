@@ -18,9 +18,6 @@
     [window setHideOffset:NSMakePoint(0, 0)];
     [window setShowOffset:NSMakePoint(0, 0)];
     
-    // Set the window to be visible on all spaces
-    [[self window] setCollectionBehavior:NSWindowCollectionBehaviorTransient];
-    
     // Effect when showing the interface
     [window setShowEffect:[NSDictionary dictionaryWithObjectsAndKeys:@"QSSlightGrowEffect",@"transformFn",@"show",@"type",[NSNumber numberWithDouble:0.08], @"duration",nil]];
     // Effect when hiding the interface
