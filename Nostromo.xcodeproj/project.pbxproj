@@ -42,8 +42,6 @@
 		D4EBE36F14A3B34B00D4FCCB /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D4EBE37014A3B34B00D4FCCB /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
 		D4EBE37114A3B34B00D4FCCB /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
-		D4EBE37214A3B34B00D4FCCB /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
-		D4EBE37314A3B34B00D4FCCB /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
 		D4EBE37414A3B34B00D4FCCB /* Quicksilver.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
 		D4EBE37514A3B34B00D4FCCB /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,8 +147,6 @@
 				D4EBE36F14A3B34B00D4FCCB /* Debug.xcconfig */,
 				D4EBE37014A3B34B00D4FCCB /* Developer.xcconfig */,
 				D4EBE37114A3B34B00D4FCCB /* QSPlugIn.xcconfig */,
-				D4EBE37214A3B34B00D4FCCB /* QSPlugIn_Debug.xcconfig */,
-				D4EBE37314A3B34B00D4FCCB /* QSPlugIn_Release.xcconfig */,
 				D4EBE37414A3B34B00D4FCCB /* Quicksilver.pch */,
 				D4EBE37514A3B34B00D4FCCB /* Release.xcconfig */,
 			);
@@ -250,7 +246,7 @@
 /* Begin XCBuildConfiguration section */
 		1DEB913B08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4EBE37214A3B34B00D4FCCB /* QSPlugIn_Debug.xcconfig */;
+			baseConfigurationReference = D4EBE37114A3B34B00D4FCCB /* QSPlugIn.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = Nostromo;
 			};
@@ -258,7 +254,7 @@
 		};
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4EBE37314A3B34B00D4FCCB /* QSPlugIn_Release.xcconfig */;
+			baseConfigurationReference = D4EBE37114A3B34B00D4FCCB /* QSPlugIn.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = Nostromo;
 			};
