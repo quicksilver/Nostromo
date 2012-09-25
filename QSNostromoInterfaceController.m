@@ -41,10 +41,12 @@
     
     [[self window] setFrame:standardRect display:YES];
     
-    [[[self window] contentView] bind:@"color" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1B" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
-    [[self window] bind:@"hasShadow" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSBezelHasShadow" options:nil];
-    [commandView bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
-    [menuButtonOverlay bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
+    NSUserDefaultsController *defcon = [NSUserDefaultsController sharedUserDefaultsController];
+    NSDictionary *transformer = [NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"];
+    [[[self window] contentView] bind:@"color" toObject:defcon withKeyPath:@"values.QSAppearance1B" options:transformer];
+    [[self window] bind:@"hasShadow" toObject:defcon withKeyPath:@"values.QSBezelHasShadow" options:nil];
+    [commandView bind:@"textColor" toObject:defcon withKeyPath:@"values.QSAppearance1T" options:transformer];
+    [menuButtonOverlay bind:@"textColor" toObject:defcon withKeyPath:@"values.QSAppearance1T" options:transformer];
     [commandView setFont:[NSFont fontWithName:interfaceFont size:12.0]];
     
     [[self window] setMovableByWindowBackground:YES];
@@ -69,8 +71,8 @@
         [theCell setCellRadiusFactor:32.0];
         [theCell setState:NSOnState];
         
-        [theCell bind:@"highlightColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1A" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
-        [theCell bind:@"textColor" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.QSAppearance1T" options:[NSDictionary dictionaryWithObject:NSUnarchiveFromDataTransformerName forKey:@"NSValueTransformerName"]];
+        [theCell bind:@"highlightColor" toObject:defcon withKeyPath:@"values.QSAppearance1A" options:transformer];
+        [theCell bind:@"textColor" toObject:defcon withKeyPath:@"values.QSAppearance1T" options:transformer];
     }
     
     [self contractWindow:nil];
