@@ -11,6 +11,9 @@
 {
 	NSArray *themes;
 	IBOutlet NSPopUpButton *themePicker;
+    IBOutlet NSTextField *fontDisplay;
+    NSFont *interfaceFont;
 }
 - (IBAction)setNostromoTheme:(id)sender;
+- (IBAction)selectInterfaceFont:(id)sender;
 @end

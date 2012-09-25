@@ -14,6 +14,11 @@
 	themes = [[NSArray alloc] initWithObjects:@"Nostromo Default", @"Shiny", @"Solarized Light", @"The Hulk", nil];
 	[themePicker removeAllItems];
 	[themePicker addItemsWithTitles:themes];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *fontName = [defaults objectForKey:@"NostromoInterfaceFontName"];
+    NSNumber *fontSize = [defaults objectForKey:@"NostromoInterfaceFontSize"];
+    interfaceFont = [NSFont fontWithName:fontName size:[fontSize floatValue]];
+    [self updateFontSelection];
 }
 
 - (void)dealloc
@@ -38,4 +43,36 @@
 		NSBeep();
 	}
 }
+
+- (void)updateFontSelection
+{
+    NSString *name = [interfaceFont fontName];
+    NSNumber *size = [NSNumber numberWithFloat:[interfaceFont pointSize]];
+    [fontDisplay setStringValue:[NSString stringWithFormat:@"%@ %.1f", name, [size floatValue]]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:name forKey:@"NostromoInterfaceFontName"];
+    [defaults setObject:size forKey:@"NostromoInterfaceFontSize"];
+}
+
+
+- (void)setInterfaceFont:(NSFont *)font
+{
+    NSFont *newFont = [font retain];
+    [interfaceFont release];
+    interfaceFont = newFont;
+}
+
+- (IBAction)selectInterfaceFont:(id)sender {
+    NSFontManager *fontManager = [NSFontManager sharedFontManager];
+    [fontManager setSelectedFont:interfaceFont isMultiple:NO];
+    [fontManager orderFrontFontPanel:self];
+}
+
+- (void)changeFont:(id)sender
+{
+    NSFontManager *fontManager = [NSFontManager sharedFontManager];
+    [self setInterfaceFont:[fontManager convertFont:[fontManager selectedFont]]];
+    [self updateFontSelection];
+}
+
 @end

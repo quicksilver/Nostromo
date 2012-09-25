@@ -17,11 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.1</string>
+	<string>1.2.0</string>
 	<key>CFBundleVersion</key>
-	<string>5</string>
-	<key>NSPrincipalClass</key>
-	<string></string>
+	<string>9</string>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
@@ -80,6 +78,13 @@
 				<string>hidden</string>
 			</dict>
 		</dict>
+	</dict>
+	<key>QSDefaults</key>
+	<dict>
+		<key>NostromoInterfaceFontName</key>
+		<string>HelveticaNeue</string>
+		<key>NostromoInterfaceFontSize</key>
+		<real>36</real>
 	</dict>
 	<key>QSRequirements</key>
 	<dict>

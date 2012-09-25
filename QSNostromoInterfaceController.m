@@ -6,7 +6,8 @@
 }
 
 - (void)windowDidLoad {
-    NSString *interfaceFont = @"Helvetica Neue";
+    NSString *interfaceFont = [[NSUserDefaults standardUserDefaults] objectForKey:@"NostromoInterfaceFontName"];
+    float baseFontSize = [[[NSUserDefaults standardUserDefaults] objectForKey:@"NostromoInterfaceFontSize"] floatValue];
     standardRect = centerRectInRect([[self window] frame], [[NSScreen mainScreen] frame]);
     standardIObjectRect = [iSelector frame];
     heightDifference = NSMinY([aSelector frame]) - NSMinY(standardIObjectRect);
@@ -56,15 +57,15 @@
         [theControl setPreferredEdge:NSMaxXEdge];
         [theControl setResultsPadding:NSMinX([dSelector frame])];
         [theControl setPreferredEdge:NSMinY([dSelector frame])];
-        [theControl setTextCellFont:[NSFont fontWithName:interfaceFont size:20.0]];
+        [theControl setTextCellFont:[NSFont fontWithName:interfaceFont size:baseFontSize/1.8]];
         [(QSWindow *)[(theControl)->resultController window] setHideOffset:NSMakePoint(NSMaxX([iSelector frame]), 0)];
         [(QSWindow *)[(theControl)->resultController window] setShowOffset:NSMakePoint(NSMaxX([dSelector frame]), 0)];
         
         [theCell setShowDetails:YES];
         [theCell setTextColor:[NSColor whiteColor]];
         [theCell setFont:[NSFont fontWithName:interfaceFont size:12.0]];
-        [theCell setNameFont:[NSFont fontWithName:interfaceFont size:36.0]];
-        [theCell setDetailsFont:[NSFont fontWithName:interfaceFont size:20.0]];
+        [theCell setNameFont:[NSFont fontWithName:interfaceFont size:baseFontSize]];
+        [theCell setDetailsFont:[NSFont fontWithName:interfaceFont size:baseFontSize/1.8]];
         [theCell setCellRadiusFactor:32.0];
         [theCell setState:NSOnState];
         
