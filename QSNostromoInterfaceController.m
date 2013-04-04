@@ -96,8 +96,9 @@
     [super dealloc];
 }
 
-- (NSSize) maxIconSize {
-    return NSMakeSize(512, 512);
+- (NSSize)maxIconSize
+{
+    return QSSize256;
 }
 
 - (void)showMainWindow:(id)sender {
