@@ -6,8 +6,6 @@
 }
 
 - (void)windowDidLoad {
-    NSString *interfaceFont = [[NSUserDefaults standardUserDefaults] objectForKey:@"NostromoInterfaceFontName"];
-    float baseFontSize = [[[NSUserDefaults standardUserDefaults] objectForKey:@"NostromoInterfaceFontSize"] floatValue];
     standardRect = centerRectInRect([[self window] frame], [[NSScreen mainScreen] frame]);
     standardIObjectRect = [iSelector frame];
     heightDifference = NSMinY([aSelector frame]) - NSMinY(standardIObjectRect);
@@ -47,7 +45,6 @@
     [[self window] bind:@"hasShadow" toObject:defcon withKeyPath:@"values.QSBezelHasShadow" options:nil];
     [commandView bind:@"textColor" toObject:defcon withKeyPath:@"values.QSAppearance1T" options:transformer];
     [menuButtonOverlay bind:@"textColor" toObject:defcon withKeyPath:@"values.QSAppearance1T" options:transformer];
-    [commandView setFont:[NSFont fontWithName:interfaceFont size:12.0]];
     
     [[self window] setMovableByWindowBackground:YES];
     
@@ -59,25 +56,37 @@
         [theControl setPreferredEdge:NSMaxXEdge];
         [theControl setResultsPadding:NSMinX([dSelector frame])];
         [theControl setPreferredEdge:NSMinY([dSelector frame])];
-        [theControl setTextCellFont:[NSFont fontWithName:interfaceFont size:baseFontSize/1.8]];
         [(QSWindow *)[(theControl)->resultController window] setHideOffset:NSMakePoint(NSMaxX([iSelector frame]), 0)];
         [(QSWindow *)[(theControl)->resultController window] setShowOffset:NSMakePoint(NSMaxX([dSelector frame]), 0)];
         
         [theCell setShowDetails:YES];
         [theCell setTextColor:[NSColor whiteColor]];
-        [theCell setFont:[NSFont fontWithName:interfaceFont size:12.0]];
-        [theCell setNameFont:[NSFont fontWithName:interfaceFont size:baseFontSize]];
-        [theCell setDetailsFont:[NSFont fontWithName:interfaceFont size:baseFontSize/1.8]];
         [theCell setCellRadiusFactor:32.0];
         [theCell setState:NSOnState];
         
         [theCell bind:@"highlightColor" toObject:defcon withKeyPath:@"values.QSAppearance1A" options:transformer];
         [theCell bind:@"textColor" toObject:defcon withKeyPath:@"values.QSAppearance1T" options:transformer];
     }
-    
+    [self setFonts];
     [self contractWindow:nil];
 }
 
+- (void)setFonts {
+    NSFont *interfaceFont = [NSUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"NostromoInterfaceFont"]];
+    NSString *interfaceFontName = [interfaceFont fontName];
+    float baseFontSize = [interfaceFont pointSize];
+
+    [commandView setFont:[NSFont fontWithName:interfaceFontName size:12.0]];
+
+    for(QSSearchObjectView *theControl in @[dSelector, aSelector, iSelector]) {
+        QSObjectCell *theCell = [theControl cell];
+        [theControl setTextCellFont:[NSFont fontWithName:interfaceFontName size:baseFontSize/1.8]];
+        [theCell setFont:[NSFont fontWithName:interfaceFontName size:12.0]];
+        [theCell setNameFont:[NSFont fontWithName:interfaceFontName size:baseFontSize]];
+        [theCell setDetailsFont:[NSFont fontWithName:interfaceFontName size:baseFontSize/1.8]];
+    }
+
+}
 - (void)dealloc {
     if ([self isWindowLoaded]) {
         [[[self window] contentView] unbind:@"color"];
