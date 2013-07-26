@@ -13,4 +13,5 @@
 }
 
 - (NSRect) rectForState:(BOOL)shouldExpand;
+- (void)setFonts;
 @end
