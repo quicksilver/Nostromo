@@ -9,15 +9,22 @@
 
 @implementation QSNostromoPrefPane
 
+
+
 - (void)awakeFromNib
 {
 	themes = [[NSArray alloc] initWithObjects:@"Nostromo Default", @"Shiny", @"Solarized Light", @"The Hulk", nil];
 	[themePicker removeAllItems];
 	[themePicker addItemsWithTitles:themes];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *fontName = [defaults objectForKey:@"NostromoInterfaceFontName"];
-    NSNumber *fontSize = [defaults objectForKey:@"NostromoInterfaceFontSize"];
-    interfaceFont = [NSFont fontWithName:fontName size:[fontSize floatValue]];
+    NSData *fontData = [defaults objectForKey:@"NostromoInterfaceFont"];
+    if (fontData) {
+        interfaceFont = [NSUnarchiver unarchiveObjectWithData:fontData];
+    }
+    if (!interfaceFont) {
+        interfaceFont = [NSFont systemFontOfSize:34];
+    }
+    [interfaceFont retain];
     [self updateFontSelection];
 }
 
@@ -46,12 +53,10 @@
 
 - (void)updateFontSelection
 {
-    NSString *name = [interfaceFont fontName];
-    NSNumber *size = [NSNumber numberWithFloat:[interfaceFont pointSize]];
-    [fontDisplay setStringValue:[NSString stringWithFormat:@"%@ %.1f", name, [size floatValue]]];
+    [fontDisplay setStringValue:[NSString stringWithFormat:@"%@ %.1f", [interfaceFont fontName], [interfaceFont pointSize]]];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:name forKey:@"NostromoInterfaceFontName"];
-    [defaults setObject:size forKey:@"NostromoInterfaceFontSize"];
+    [defaults setObject:[NSArchiver archivedDataWithRootObject:interfaceFont] forKey:@"NostromoInterfaceFont"];
+    [[[NSApp delegate] interfaceController] setFonts];
 }
 
 
