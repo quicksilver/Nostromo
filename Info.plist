@@ -17,9 +17,18 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>CFBundleVersion</key>
-	<string>9</string>
+	<string>A</string>
+	<key>QSDefaults</key>
+	<dict>
+		<key>NostromoInterfaceFont</key>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAZOU0ZvbnQehIQITlNPYmplY3QAhYQB
+		aSSEBVszNmNdBgAAABwAAAD//kgAZQBsAHYAZQB0AGkAYwBhAE4AZQB1AGUA
+		hAFmJIQBYwCYAZgAmACG
+		</data>
+	</dict>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
@@ -31,25 +40,16 @@
 		<key>description</key>
 		<string>Provides a wide interface</string>
 		<key>extendedDescription</key>
-		<string>&lt;h2 id=&quot;nostromo&quot;&gt;Nostromo&lt;/h2&gt;
-
+		<string>&lt;h2&gt;Nostromo&lt;/h2&gt;
 &lt;p&gt;This provides a wide interface, suited to displaying longer names and/or details for items in your catalog.&lt;/p&gt;
-
-&lt;h3 id=&quot;colors&quot;&gt;Colors&lt;/h3&gt;
-
-&lt;p&gt;The &amp;#8220;Customize&amp;#8221; panel in the Appearance preferences allows you to set colors from several &amp;#8220;themes&amp;#8221;. This interface uses and respects Quicksilver&amp;#8217;s bezel colors (also configurable in the Appearance prefs). As such, the themes are not persistent, but the individual colors are. This allows you to use one of the built-in options as a starting point, but tweak individual colors to your liking if needed.&lt;/p&gt;
-
-&lt;p&gt;To put it another way, the &amp;#8220;Customize&amp;#8221; panel is only used to &lt;strong&gt;set&lt;/strong&gt; colors. Do not expect to see the last theme you used selected the next time you open the panel.&lt;/p&gt;
-
-&lt;h3 id=&quot;position&quot;&gt;Position&lt;/h3&gt;
-
-&lt;p&gt;The interface can be moved if it&amp;#8217;s obscuring something, but the new position will not be remembered. It will be centered the next time you invoke it.&lt;/p&gt;
-
-&lt;h3 id=&quot;about&quot;&gt;About&lt;/h3&gt;
-
-&lt;p&gt;&amp;#8220;Nostromo&amp;#8221; is the name of the ship in &lt;em&gt;Alien&lt;/em&gt; (1979).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/skurfer/Nostromo/issues&quot;&gt;Report bugs&lt;/a&gt; on GitHub.&lt;/p&gt;</string>
+&lt;h3&gt;Colors&lt;/h3&gt;
+&lt;p&gt;The "Customize" panel in the Appearance preferences allows you to set colors from several "themes". This interface uses and respects Quicksilver's bezel colors (also configurable in the Appearance prefs). As such, the themes are not persistent, but the individual colors are. This allows you to use one of the built-in options as a starting point, but tweak individual colors to your liking if needed.&lt;/p&gt;
+&lt;p&gt;To put it another way, the "Customize" panel is only used to &lt;strong&gt;set&lt;/strong&gt; colors. Do not expect to see the last theme you used selected the next time you open the panel.&lt;/p&gt;
+&lt;h3&gt;Position&lt;/h3&gt;
+&lt;p&gt;The interface can be moved if it's obscuring something, but the new position will not be remembered. It will be centered the next time you invoke it.&lt;/p&gt;
+&lt;h3&gt;About&lt;/h3&gt;
+&lt;p&gt;"Nostromo" is the name of the ship in &lt;em&gt;Alien&lt;/em&gt; (1979).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/skurfer/Nostromo/issues"&gt;Report bugs&lt;/a&gt; on GitHub.&lt;/p&gt;</string>
 	</dict>
 	<key>QSRegistration</key>
 	<dict>
@@ -79,17 +79,10 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>QSDefaults</key>
-	<dict>
-		<key>NostromoInterfaceFontName</key>
-		<string>HelveticaNeue</string>
-		<key>NostromoInterfaceFontSize</key>
-		<real>36</real>
-	</dict>
 	<key>QSRequirements</key>
 	<dict>
 		<key>version</key>
-		<string>3936</string>
+		<string>4001</string>
 	</dict>
 </dict>
 </plist>
