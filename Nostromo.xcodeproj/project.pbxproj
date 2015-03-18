@@ -11,6 +11,7 @@
 		07ED11F5136AD582002B55FF /* QSNostromoInterfaceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07ED11F4136AD582002B55FF /* QSNostromoInterfaceController.xib */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		D421EE61161B1F5E0074B92D /* QSInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D421EE60161B1F5E0074B92D /* QSInterface.framework */; };
+		D43905B11ABA75EE006836B7 /* SouthernWaterTribe.plist in Resources */ = {isa = PBXBuildFile; fileRef = D43905B01ABA75EE006836B7 /* SouthernWaterTribe.plist */; };
 		D46582EA14FBE81800767406 /* Shiny.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E714FBE81800767406 /* Shiny.plist */; };
 		D46582EB14FBE81800767406 /* SolarizedLight.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E814FBE81800767406 /* SolarizedLight.plist */; };
 		D46582EC14FBE81800767406 /* TheHulk.plist in Resources */ = {isa = PBXBuildFile; fileRef = D46582E914FBE81800767406 /* TheHulk.plist */; };
@@ -32,6 +33,7 @@
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		D421EE60161B1F5E0074B92D /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSInterface.framework; path = /tmp/QS/build/Release/QSInterface.framework; sourceTree = "<absolute>"; };
+		D43905B01ABA75EE006836B7 /* SouthernWaterTribe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SouthernWaterTribe.plist; sourceTree = "<group>"; };
 		D46582E714FBE81800767406 /* Shiny.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Shiny.plist; sourceTree = "<group>"; };
 		D46582E814FBE81800767406 /* SolarizedLight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SolarizedLight.plist; sourceTree = "<group>"; };
 		D46582E914FBE81800767406 /* TheHulk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TheHulk.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D43905B01ABA75EE006836B7 /* SouthernWaterTribe.plist */,
 				D46582E714FBE81800767406 /* Shiny.plist */,
 				D46582E814FBE81800767406 /* SolarizedLight.plist */,
 				D46582E914FBE81800767406 /* TheHulk.plist */,
@@ -206,6 +209,7 @@
 				D4F630D21374E7560003D22F /* Localizable.strings in Resources */,
 				07ED11F5136AD582002B55FF /* QSNostromoInterfaceController.xib in Resources */,
 				D4BACB3E13A28AB0002C9E58 /* QSNostromoPrefPane.xib in Resources */,
+				D43905B11ABA75EE006836B7 /* SouthernWaterTribe.plist in Resources */,
 				D4BACC4D13A2AA15002C9E58 /* NostromoDefault.plist in Resources */,
 				D46582EA14FBE81800767406 /* Shiny.plist in Resources */,
 				D46582EB14FBE81800767406 /* SolarizedLight.plist in Resources */,

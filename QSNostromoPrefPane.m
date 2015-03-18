@@ -18,6 +18,7 @@
         @"Shiny",
         @"Solarized Light",
         @"The Hulk",
+        @"Southern Water Tribe"
     ];
 	[themePicker removeAllItems];
 	[themePicker addItemsWithTitles:themes];
