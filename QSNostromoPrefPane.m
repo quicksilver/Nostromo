@@ -13,7 +13,12 @@
 
 - (void)awakeFromNib
 {
-	themes = [[NSArray alloc] initWithObjects:@"Nostromo Default", @"Shiny", @"Solarized Light", @"The Hulk", nil];
+    themes = @[
+        @"Nostromo Default",
+        @"Shiny",
+        @"Solarized Light",
+        @"The Hulk",
+    ];
 	[themePicker removeAllItems];
 	[themePicker addItemsWithTitles:themes];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
