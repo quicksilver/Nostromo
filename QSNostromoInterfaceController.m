@@ -84,6 +84,7 @@
         [theCell setFont:[NSFont fontWithName:interfaceFontName size:12.0]];
         [theCell setNameFont:[NSFont fontWithName:interfaceFontName size:baseFontSize]];
         [theCell setDetailsFont:[NSFont fontWithName:interfaceFontName size:baseFontSize/1.8]];
+		[theCell setAlignment:NSTextAlignmentLeft];
     }
 
 }
