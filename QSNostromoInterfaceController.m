@@ -77,8 +77,8 @@
     float baseFontSize = [interfaceFont pointSize];
 
     [commandView setFont:[NSFont fontWithName:interfaceFontName size:12.0]];
-
-    for(QSSearchObjectView *theControl in @[dSelector, aSelector, iSelector]) {
+    NSArray *theControls = [NSArray arrayWithObjects:dSelector, aSelector, iSelector, nil];
+    for(QSSearchObjectView *theControl in theControls) {
         QSObjectCell *theCell = [theControl cell];
         [theControl setTextCellFont:[NSFont fontWithName:interfaceFontName size:baseFontSize/1.8]];
         [theCell setFont:[NSFont fontWithName:interfaceFontName size:12.0]];
